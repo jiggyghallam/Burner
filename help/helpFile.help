@@ -1,0 +1,72 @@
+Files - Create a new file
+To create a new file, click the "File" option on the menu, followed by "New File" (alternatively, press Ctrl and N).
+
+You will now be required to entered four bounds: 
+Minimum Latitude (between -90 and 90)
+Minimum Longitude (between -180 and 180) 
+Maximum Latitude (between -90 and 90)
+Maximum Longitude (between -180 and 180)
+<help>Files - Load in a file
+To load in a file click the "File" option on the menu, followed by "Open" (alternatively, press Ctrl and O).
+
+Find the file you wish to load, click "Open", and the file you selected will be loaded.
+<help>Files - Save a file
+To save a file, click "File" on the menu, followed by "Save" (alternatively, press Ctrl and S).
+
+The current file you are on will be saved.
+<help>Files - Save a file with a new name
+To save a file with a new name, click "File" on the menu, followed by "Save As" (alternatively, press Ctrl and A).
+
+You will then need to specify a save location, and a new name, after wihch the current file you are on will be saved.
+<help>Tabs - Create a new tab
+To create a new tab, click "File", followed by "New Tab" (alternatively, press Ctrl and T). You can also right click on the tab manager at the top and press "New Tab".
+
+This will then create a new tab, and focus the system on this tab. When you have more than one tab open in the system, you can drag it (using the menu bar) into a separate window
+<help>Tabs - Rename a tab
+To rename a tab, right click on the tab manager at the top, and select "Rename Tab", and enter a name. The currently selected tab will be renamed.
+<help>Tabs - Reopen a closed tab
+To reopen a closed tab, click "File", followed by "Reopen Last Tab", (or press Ctrl, and Shift, and T). You can also right click on the tab manager at the top and click "Reopen Last Tab".
+
+This will open the last tab that was closed.
+<help>Tabs - Close a tab
+To close a tab, click "File" followed by "Close" (or press Ctrl and W). Alternatively you can right click the tab you wish to close on the tab manager and select "Close".
+
+This will close the selected tab, or the currently open tab.
+<help>Way Points - Add a new way point
+To add a new way point to the system, navigate to the "Add New Data" panel in the bottom left hand corner. Enter in the Name, Latitude, Longitude and Elevation of the point, followed by clicking "Add".
+
+This will add the point to the system.
+<help>Way Points - Edit way point information
+To edit a specific point, navigate to it in the data browser (using the next and previous buttons), followed by pressing the "Edit" button, changing the values as required.
+<help>Way Points - Add way point description
+To add a description to a specific point, navigate to it in the data browser (using the next and previous buttons), followed by pressing the "Adv.." button, and entering a description in the "Description" entry field.
+<help>Way Points - Change way point icon
+To change the icon of a point, navigate to it in the data browser (using the next and previous buttons), followed by pressing the "Adv.." button, and clicking "Change Icon". You will then face a selection of icons to choose from.
+<help>Way Points - Hide way points from map
+To hide a specific point from the map, navigate to it in the data browser (using the next and previous buttons), followed by pressing the "Adv.." button, and ticking or unticking the box labelled "Show on map".
+
+This will show or hide this specific point from the map.
+<help>Way Points - Remove a way point
+To remove a point from the system, navigate to it in the data browser (using the next and previous buttons), followed by pressing the "Remove" button, and accepting the resulting dialogue box.
+
+This will delete the point permanently from the system.
+<help>Visual Elements - Hide or show panels
+To hide or show specific panels of the system, press "View" followed by "Hide/Show" of the panel you wish to hide.
+
+This will hide or show the selected panel from view.
+<help>Visual Elements - Toggle map display mode
+To change the display mode of the map, click "View", followed by "Map Display Mode". You can then choose one of the following map display options
+
+Road Map (Ctrl and R)
+Satellite (Ctrl and L)
+Hybrid (Ctrl and H)
+Terrain (Ctrl and K)
+<help>Visual Elements - Toggle way point display mode
+To toggle between way point display modes, click "View", followed by "Point Display", and then click either "Show Icons" (Short cut Ctrl and Y), or "Show Description" (short cut Ctrl and U) depending on your preference.
+
+This will show either way point icons on the map, or their descriptions.
+<help>Proxy Settings
+To edit proxy settings, click "Proxy", and "Edit Settings" (alternatively press Ctrl and X). 
+
+You can then enter the relevant proxy settings.
+<help>
