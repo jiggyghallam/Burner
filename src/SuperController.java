@@ -34,12 +34,6 @@ public class SuperController {
 
 	private ArrayList<SubController> subControllers;
 
-	public int numberOfIcons = 0;
-	public Hashtable<String, BufferedImage> iconList;
-	public String[] iconNames;
-
-	public BufferedImage defaultIcon;
-
 	public SuperController() {
 
 		subControllers = new ArrayList<SubController>();
@@ -73,8 +67,6 @@ public class SuperController {
 		frame.add(systemTabs);
 		frame.setVisible(true);
 
-	//	subControllers.get(0).getView().resizeTable();
-
 	}
 
 	/*
@@ -106,7 +98,7 @@ public class SuperController {
 		 * will /ONLY/ be displayed if this is run (twice).
 		 */
 		SwingUtilities.updateComponentTreeUI(frame);
-
+		System.out.println("why");
 	}
 
 	public void removeTab(int i) {

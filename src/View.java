@@ -15,7 +15,7 @@ import javax.swing.JSplitPane;
 import javax.swing.JToolBar;
 import javax.swing.table.DefaultTableModel;
 
-public class View extends NewManager {
+public class View extends InteractionManager {
 
 	private JSplitPane left_splitPane;
 	private JSplitPane main_splitPane;
@@ -34,11 +34,11 @@ public class View extends NewManager {
 
 		createMenu();
 		createTaskListManager(dtm);
-		createNewManager();
+		createInteractionManager();
 		createChartArea();
 
 		left_splitPane = new JSplitPane(JSplitPane.VERTICAL_SPLIT,
-				taskListPanel, new_Panel);
+				taskListPanel, interaction_Panel);
 		left_splitPane.setDividerLocation(600);
 		left_splitPane.setOneTouchExpandable(true);
 
@@ -109,6 +109,8 @@ public class View extends NewManager {
 		 * Assigning action listeners to the buttons, each is assigned an
 		 * actionCommand so they can be differentiated
 		 */
+		add_task.setActionCommand("add_task_al");
+		add_task.addActionListener(al);
 	}
 
 	/*

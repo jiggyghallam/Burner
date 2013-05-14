@@ -60,7 +60,8 @@ public class SubController {
 		 */
 		view.addMenuListeners(new assignMenuListener());
 		view.addFocusListeners(new assignFocusListener());
-
+		view.addActionListeners(new buttonListeners());
+		
 		currentIndex = 0;
 
 	}
@@ -100,6 +101,47 @@ public class SubController {
 	/*
 	 * Sub classes used to assign listeners to the elements of the system
 	 */
+	
+	class buttonListeners implements ActionListener {
+
+		@Override
+		public void actionPerformed(ActionEvent arg0) {
+			if(arg0.getActionCommand().equals("add_task_al")){
+				
+				String[] params = { "Task Name", "Task Length" };
+				
+				InputDialogue id = new InputDialogue("New Task Input", params);
+				
+				String[] out = id.getFields();
+				
+				try {
+					int time = Integer.valueOf(out[1]);
+					Task t = new Task(out[0], time);
+					
+					model.addNewTask(t);
+					
+					Object[] newRow = new Object[2];
+					newRow[0] = t.getName();
+					newRow[1] = t.getTime();
+					model.addTableRow(newRow);
+
+				//	view.resizeTable();
+					
+				} catch (NumberFormatException nfe){
+					JOptionPane
+					.showMessageDialog(
+							null,
+							"Please make sure you are entering a number for the time field",
+							"Number Required", JOptionPane.ERROR_MESSAGE);
+				}
+				
+				
+				
+			}
+			
+		}
+		
+	}
 
 	class assignFocusListener implements FocusListener {
 
@@ -153,8 +195,8 @@ public class SubController {
 			} else if (m.getActionCommand().equals("help_help_ml")) {
 				// Help -> Help Manual
 				launchHelpMenu();
+			} 
 			}
-		}
 
 		/*
 		 * Sub methods used to split up the action listener

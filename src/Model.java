@@ -22,7 +22,7 @@ public class Model {
 	private ArrayList<Object[]> tableData;
 
 	public Model() {
-		//GPSPointArray = new ArrayList<WayPoint>();
+		TaskList = new ArrayList<Task>();
 
 		// Create table model
 		String[] columnNames = { "Task", "Time" };
@@ -59,6 +59,10 @@ public class Model {
 		TaskList.add(t);
 	}
 
+	public void addNewTask(Task t){
+		TaskList.add(t);
+	}
+	
 	public void updateTable() {
 		// Updates all values in the table after an edit to information
 		for (int i = table_dataModel.getRowCount() - 1; i >= 0; i--) {

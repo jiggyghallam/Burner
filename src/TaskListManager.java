@@ -26,12 +26,6 @@ public class TaskListManager extends MenuManager {
 	}
 
 	public void createTaskListManager(DefaultTableModel tableModel) {
-
-		/*
-		 * imported_Data_Panel: Top-right hand panel, used for viewing and
-		 * manipulating data that has been imported from file
-		 */
-
 		taskListPanel = new JPanel();
 		taskListPanel.setLayout(new GridBagLayout());
 		taskListPanel.setBorder(BorderFactory
